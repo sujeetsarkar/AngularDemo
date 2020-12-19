@@ -1,1 +1,0 @@
-Generated Angular Project Using Angular CLI with CSS and without Routing.
