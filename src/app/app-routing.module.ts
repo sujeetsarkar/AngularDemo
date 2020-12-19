@@ -9,6 +9,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'auth', redirectTo: 'authentication', pathMatch: 'full'},
+  { path: 'authentication', loadChildren: () => import('./authentication/authentication.module').then(m => m.AuthenticationModule)},
   { path: '**', component: PageNotFoundComponentComponent }
 ];
 

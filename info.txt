@@ -1,1 +1,6 @@
 Generated Angular Project Using Angular CLI with CSS and with Routing.
+
+
+ng generate module app-routing --flat --module=app
+    --flat puts the file in src/app instead of its own folder.
+    --module=app tells the CLI to register it in the imports array of the AppModule.
