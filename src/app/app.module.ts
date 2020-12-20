@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponentComponent } from './components/shared/page-not-found-component/page-not-found-component.component';
 import { ServerComponent } from './components/server/server.component';
 import { ServersComponent } from './components/servers/servers.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ServersComponent } from './components/servers/servers.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

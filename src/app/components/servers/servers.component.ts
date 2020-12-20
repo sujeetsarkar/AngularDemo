@@ -11,7 +11,7 @@ export class ServersComponent implements OnInit {
 
   allowNewServers = false;
   serverCreationStatus = "No Server Was Created";
-  serverName = '';
+  serverName = 'TestServer';
   constructor() {
     setTimeout(() => {
       this.allowNewServers = true;
