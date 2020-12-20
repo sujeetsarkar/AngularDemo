@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-first',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  childA() {
+    this.router.navigate(['child-a'], { relativeTo: this.route });
+  }
+
+  
+  childB() {
+    this.router.navigate(['child-b'], { relativeTo: this.route });
   }
 
 }
