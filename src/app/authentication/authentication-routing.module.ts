@@ -8,7 +8,7 @@ import { FirstComponent } from "./components/first/first.component";
 
 export const authRoutes: Routes = [
     { path: '', redirectTo: 'first', pathMatch: 'full' },
-    { path: 'dashboard', component: DashboardComponent },
+    { path: 'dashboard/:id', component: DashboardComponent },
     {
         path: 'first',
         component: FirstComponent, // this is the component with the <router-outlet> in the template

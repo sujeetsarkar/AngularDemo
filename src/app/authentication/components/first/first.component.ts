@@ -22,4 +22,8 @@ export class FirstComponent implements OnInit {
     this.router.navigate(['child-b'], { relativeTo: this.route });
   }
 
+  dashboard(id: number){
+    this.router.navigate(['../dashboard', id], { relativeTo: this.route });
+  }
+
 }
