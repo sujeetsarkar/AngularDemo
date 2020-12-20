@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponentComponent } from './components/shared/page-not-found-component/page-not-found-component.component';
 import { ServerComponent } from './components/server/server.component';
+import { ServersComponent } from './components/servers/servers.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ServerComponent } from './components/server/server.component';
     HomeComponent,
     LoginComponent,
     PageNotFoundComponentComponent,
-    ServerComponent
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule,
