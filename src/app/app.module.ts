@@ -9,6 +9,8 @@ import { PageNotFoundComponentComponent } from './components/shared/page-not-fou
 import { ServerComponent } from './components/server/server.component';
 import { ServersComponent } from './components/servers/servers.component';
 import { FormsModule } from '@angular/forms';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/parent/child/child.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     PageNotFoundComponentComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
