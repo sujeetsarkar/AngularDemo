@@ -1,2 +1,6 @@
 <p>I am in parent component</p>
-<app-child [childMessage]="messageFromParent"></app-child>
+<!-- <app-child [childMessage]="messageFromParent"></app-child> -->
+<app-child [childMessage]="messageFromParent" (newMessageEvent)="getMessageFromChild($event)"></app-child>
+<p>
+    <label>This is the message received from child: {{messageRecivedFromChild}}</label>
+</p>

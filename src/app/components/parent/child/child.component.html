@@ -1,1 +1,7 @@
 <p>I am in child components!!! message from parent: {{childMessage}}</p>
+<p>
+    <label>Send Message: <input type="text" class="form-control" #newMessage> </label>
+</p>
+<p>
+    <button (click)="sendNewMessage(newMessage.value)" class="btn btn-primary">Send To Parent</button>
+</p>

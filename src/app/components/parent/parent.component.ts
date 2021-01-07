@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
   messageFromParent = "This is the message from Parent";
+  messageRecivedFromChild = "No Message";
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getMessageFromChild(val){
+    this.messageRecivedFromChild = val;
+    console.log(val);
   }
 
 }
