@@ -10,3 +10,6 @@ bootstrap
     npm install jquery --save
     npm install popper.js --save
     npm install bootstrap --save
+
+
+https://angular.io/guide/lifecycle-hooks
